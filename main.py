@@ -11,7 +11,6 @@ from time import sleep
 
 # Define Variables and Functions
 points = 0
-<<<<<<< HEAD
 level = 1
 
 song1 = "Bohemian Rhapsody"  # wrong level, fix later
@@ -25,8 +24,6 @@ ans2 = ["like wrecking ball", "like a wrecking ball", "LIKE WRECKING BALL", "LIK
 song3 = "Let It Go"
 lyrics3 = "Let it go, let it go, cant ___ it ___ anymore."
 ans3 = ["Hold Back", "Hold back", "hold Back", "holdback", "HOLD BACK", "HOLD, BACK", "HOLDBACK", "hold it back."]
-=======
->>>>>>> parent of 97629dc (Started new game level system)
 
 def clear():
     # for windows
