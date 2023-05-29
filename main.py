@@ -1,10 +1,17 @@
+# What's The Lyric! V 0.0.1 Alpha
+# Changelog
+# - First version
+# To-do
+# - Finish first levels (1-10)
+# - Add Music
+# 
+
 # Import
 from os import system, name
 from time import sleep
 
 # Define Variables and Functions
 points = 0
-print("Welcome to GuessTheLyrics")
 
 def clear():
     # for windows
@@ -17,13 +24,12 @@ def nextlevel():
     clear()
     print("You have", points, "points")
 
-print("Level 1")
-lv1 = str(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball\n"))
-
 game = True
 while game:
     level1 = True
     while level1:
+        print("Level 1")
+        lv1 = str(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball\nOption 3: Let It Go\n"))
         if lv1 in ["1", "Bohemian Rhapsody", "Option 1"]:
             lv1a1 = str(input("What are the missing lyrics:\n'Mama, just ______ a man'?\n"))
             if lv1a1 in ["killed", "Killed", "KILLED", "killed.", "Killed."]:
@@ -32,22 +38,50 @@ while game:
                 level1 = False
                 
             else:
-                print("Incorrect.")
-                level1 = False
-                game = False
+                game = False # broken
         elif lv1 in ["2", "Wrecking Ball", "Option 2"]:
             lv1a1 = str(input("What are the missing lyrics:\n'I came in ___ a ___.'?\n"))
             if lv1a1 in ["like wrecking", "like, wrecking", "likewrecking", "like. wrecking", "LIKE WRECKING", "LIKE, WRECKING", "like a wrecking", "like a wrecking."]:
                 print("Correct!")
                 points += 1
                 level1 = False
+        elif lv1 in ["3", "Let It Go", "Let it go", "Let It Go", "let it go", "Option 3"]: # Level incomplete
+            lv1a1 = str(input("What are the missing lyrics:\n'Let it go, let it go, cant ___ it ___ anymore.'?\n"))
+            if lv1a1 in ["Hold Back", "Hold back", "hold Back", "holdback", "HOLD BACK", "HOLD, BACK", "HOLDBACK", "hold it back."]:
+                print("Correct!")
+                points += 1
+                level1 = False
         else:
             print("Invalid option, please try again.")
-    level2 = True
+            
     nextlevel()
-
+    level2 = True
     while level2:
-        print("Working.")
-        sleep(20)
+        print("Level 2")
+        lv1 = str(input("Choose a song:\nOption 1: Another One Bites The Dust\nOption 2: Back In Black\nOption 3: We Didn't Start the Fire\n"))
+        if lv1 in ["1", "Another One Bites The Dust", "Option 1"]:
+            lv1a1 = str(input("What are the missing lyrics:\n'___ of ___ doorway the ___ ___.'?\n"))
+            if lv1a1 in ["out the bullets rip", "out of the doorway the bullets rip", "out, the, bullets, rip", "OUT THE BULLETS RIP", "Out the bullets rip", "Out, the, bullets, rip"]:
+                print("Correct!")
+                points += 1
+                level1 = False
+                
+            else:
+                game = False # broken
+        
+        elif lv1 in ["2", "", "Option 2"]:
+            lv1a1 = str(input("What are the missing lyrics:\n'LYRICS'?\n"))
+            if lv1a1 in [""]:
+                print("Correct!")
+                points += 1
+                level1 = False
+        elif lv1 in ["3", "Let It Go", "Let it go", "Let It Go", "let it go", "Option 3"]: # Level incomplete
+            lv1a1 = str(input("What are the missing lyrics:\n'Let it go, let it go, cant ___ it ___ anymore.'?\n"))
+            if lv1a1 in ["Hold Back", "Hold back", "hold Back", "holdback", "HOLD BACK", "HOLD, BACK", "HOLDBACK", "hold it back."]:
+                print("Correct!")
+                points += 1
+                level1 = False
+        else:
+            print("Invalid option, please try again.")
         
 print("Game Over. Your score was", points)
