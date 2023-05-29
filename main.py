@@ -21,3 +21,4 @@ lv1 = str(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking
 
 if lv1 in ["1", "Bohemian Rhapsody", "Option 1"]:
     print("working")
+#hey bozo
