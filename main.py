@@ -2,7 +2,7 @@
  
 points = 0
 print("Welcome to GuessTheLyrics")
-name = input("What is your name?")
+name = input("What is your name")
 print("Hello", name)
 
 input("Press the Enter key to continue: ")
@@ -15,3 +15,5 @@ if lv1 == 1:
     lv1s1 = str(("Guess the missing lyrics:\nMama, just ______ a man"))
 else:
     print()
+    if lv1s1 == killed:
+        print("correct")
