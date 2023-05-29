@@ -8,4 +8,9 @@ print("Hello", name)
 input("Press the Enter key to continue: ")
 
 print("Level 1")
-input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball")
+print("Use the number until we introduce text support")
+lv1 = int(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball"))
+
+if lv1 in [1, "Bohemian Rhapsody", "Option 1"]:
+    lv1s1 = str(("Guess the missing lyrics:\nMama, just ______ a man"))
+    if
