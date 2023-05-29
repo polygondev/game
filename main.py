@@ -1,4 +1,4 @@
-import os
+# Working
  
 points = 0
 print("Welcome to GuessTheLyrics")
@@ -8,7 +8,7 @@ print("Hello", name)
 input("Press the Enter key to continue: ")
 
 print("Level 1")
-print("Use the number until we introduce text support")
+# broken
 lv1 = int(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball"))
 
 if lv1 == 1:
