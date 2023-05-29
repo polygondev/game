@@ -2,7 +2,7 @@ import os
  
 points = 0
 print("Welcome to GuessTheLyrics")
-name = input("What is your name?")
+name = input("What is your name")
 print("Hello", name)
 
 input("Press the Enter key to continue: ")
@@ -13,4 +13,5 @@ lv1 = int(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking
 
 if lv1 in [1, "Bohemian Rhapsody", "Option 1"]:
     lv1s1 = str(("Guess the missing lyrics:\nMama, just ______ a man"))
-    if
+    if lv1s1 == killed:
+        print("correct")
