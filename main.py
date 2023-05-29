@@ -40,45 +40,11 @@ def nextlevel():
     global level, points
     clear()
     print("You have", points, "points")
-<<<<<<< HEAD
-
-def level():
-    global level, points
-    levelselect = input("Choose a song:\nOption 1: " + song1 + "\nOption 2: " + song2 + "\nOption 3: " + song3 + "\n")
-    if levelselect in ["1", song1, "Option 1"]:
-        userans = input("What are the missing lyrics:\n'" + lyrics1 + "'?\n")
-        if userans in ans1:
-            print("Correct!")
-            points += 1
-            level = False
-        else:
-            level = False
-
-    elif levelselect in ["2", song2, "Option 2"]:
-        userans = input("What are the missing lyrics:\n'" + lyrics2 + "'?\n")
-        if userans in ans2:
-            print("Correct!")
-            points += 1
-            level = False
-    elif levelselect in ["3", song3, "Let It Go", "Let it go", "let it go", "Option 3"]:  # Level incomplete
-        userans = input("What are the missing lyrics:\n'" + lyrics3 + "'?\n")
-        if userans in ans3:
-            print("Correct!")
-            points += 1
-            level = False
-    else:
-        print("Invalid option, please try again.")
-=======
->>>>>>> parent of 97629dc (Started new game level system)
-
 
 game = True
 while game:
     level1 = True
     while level1:
-<<<<<<< HEAD
-        level()
-=======
         print("Level 1")
         lv1 = str(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball\nOption 3: Let It Go\n"))
         if lv1 in ["1", "Bohemian Rhapsody", "Option 1"]:
@@ -105,7 +71,6 @@ while game:
         else:
             print("Invalid option, please try again.")
             
->>>>>>> parent of 97629dc (Started new game level system)
     nextlevel()
 
     song1 = "Another One Bites The Dust"
@@ -117,13 +82,8 @@ while game:
         print("Level 2")
         lv1 = input("Choose a song:\nOption 1: Another One Bites The Dust\nOption 2: Back In Black\nOption 3: We Didn't Start the Fire\n")
         if lv1 in ["1", "Another One Bites The Dust", "Option 1"]:
-<<<<<<< HEAD
-            userans = input("What are the missing lyrics:\n'___ of ___ doorway the ___ ___.'?\n")
-            if userans in ["out the bullets rip", "out of the doorway the bullets rip", "out, the, bullets, rip", "OUT THE BULLETS RIP", "Out the bullets rip", "Out, the, bullets, rip"]:
-=======
             lv1a1 = str(input("What are the missing lyrics:\n'___ of ___ doorway the ___ ___.'?\n"))
             if lv1a1 in ["out the bullets rip", "out of the doorway the bullets rip", "out, the, bullets, rip", "OUT THE BULLETS RIP", "Out the bullets rip", "Out, the, bullets, rip"]:
->>>>>>> parent of 97629dc (Started new game level system)
                 print("Correct!")
                 points += 1
                 level1 = False
@@ -131,16 +91,6 @@ while game:
                 game = False  # broken
 
         elif lv1 in ["2", "", "Option 2"]:
-<<<<<<< HEAD
-            userans = input("What are the missing lyrics:\n'LYRICS'?\n")
-            if userans == "":
-                print("Correct!")
-                points += 1
-                level1 = False
-        elif lv1 in ["3", "Let It Go", "Let it go", "let it go", "Option 3"]:  # Level incomplete
-            userans = input("What are the missing lyrics:\n'Let it go, let it go, cant ___ it ___ anymore.'?\n")
-            if userans in ["Hold Back", "Hold back", "hold Back", "holdback", "HOLD BACK", "HOLD, BACK", "HOLDBACK", "hold it back."]:
-=======
             lv1a1 = str(input("What are the missing lyrics:\n'LYRICS'?\n"))
             if lv1a1 in [""]:
                 print("Correct!")
@@ -149,7 +99,6 @@ while game:
         elif lv1 in ["3", "Let It Go", "Let it go", "Let It Go", "let it go", "Option 3"]: # Level incomplete
             lv1a1 = str(input("What are the missing lyrics:\n'Let it go, let it go, cant ___ it ___ anymore.'?\n"))
             if lv1a1 in ["Hold Back", "Hold back", "hold Back", "holdback", "HOLD BACK", "HOLD, BACK", "HOLDBACK", "hold it back."]:
->>>>>>> parent of 97629dc (Started new game level system)
                 print("Correct!")
                 points += 1
                 level1 = False
