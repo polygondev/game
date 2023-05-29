@@ -11,6 +11,7 @@ print("Level 1")
 print("Use the number until we introduce text support")
 lv1 = int(input("Choose a song:\nOption 1: Bohemian Rhapsody\nOption 2: Wrecking Ball"))
 
-if lv1 in [1, "Bohemian Rhapsody", "Option 1"]:
+if lv1 == 1:
     lv1s1 = str(("Guess the missing lyrics:\nMama, just ______ a man"))
-    if
+else:
+    print()
