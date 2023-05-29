@@ -36,8 +36,8 @@ while game:
                 level1 = False
                 game = False
         elif lv1 in ["2", "Wrecking Ball", "Option 2"]:
-            lv1a1 = str(input("What are the missing lyrics:\n'Mama, just ______ a man'?\n"))
-            if lv1a1 in ["killed", "Killed", "KILLED", "killed.", "Killed."]:
+            lv1a1 = str(input("What are the missing lyrics:\n'I came in ___ a ___.'?\n"))
+            if lv1a1 in ["like wrecking", "like, wrecking", "likewrecking", "like. wrecking", "LIKE WRECKING", "LIKE, WRECKING", "like a wrecking", "like a wrecking."]:
                 print("Correct!")
                 points += 1
                 level1 = False
