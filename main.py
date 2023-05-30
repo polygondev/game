@@ -1,9 +1,22 @@
-# What's The Lyric! V 0.0.1 Alpha
+# What's The Lyric! CLI Version. GUI coming *eventually*
 # Changelog
 # - First version
 # To-do
 # - Finish first levels (1-10)
 # - Add Music
+
+points = 0
+wrong = "Incorrect. If your answer is correct, please add an issue to GitHub\nhttps://github.com/polygondev/game/issues"
+
+# song = input("Choose a song: \n1. SONG \n2. SONG \n3. SONG")
+# if song in ["1", "Bohemian Rhapsody"]: # Song one
+#     ans1 = input("What are the missing lyrics?")
+#     if ans1 in ["killed", "Killed", "KILLED", "killed.", "Killed."]:
+#         points += 1
+#         print("Correct! You have", points)
+#     else:
+#         print(wrong)
+
 
 # Import
 from os import system, name
@@ -39,9 +52,7 @@ def nextlevel():
     print("You have", points, "points")
 
 def level():
-    
-
-game = True
+    print()
 while game:
     level1 = True
     while level1:
