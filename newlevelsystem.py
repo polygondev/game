@@ -47,8 +47,8 @@ while level:
             wrong()
 
     elif song in ["2", "We Didn't Start The Fire", "we didn't start the fire"]: # Song two
-        ans1 = input("What are the missing lyrics? 'I came in ___ a ___.' ")
-        if ans1 in ["like wrecking", "like, wrecking", "likewrecking", "like. wrecking", "LIKE WRECKING", "LIKE, WRECKING", "like a wrecking", "like a wrecking."]:
+        ans1 = input("What are the missing lyrics? 'It ___ always ___ since ___ ___ was turning.' ")
+        if ans1 in ["was burning the world", "Was Burning The World", "WAS BURNING THE WORLD", "wasburningtheworld", "was, burning, the, world."]:
             correct()
         else:
             wrong()
