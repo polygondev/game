@@ -38,6 +38,9 @@ def nextlevel():
     clear()
     print("You have", points, "points")
 
+def level():
+    
+
 game = True
 while game:
     level1 = True
